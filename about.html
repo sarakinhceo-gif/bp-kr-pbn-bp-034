@@ -1,6 +1,355 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-DOCTY
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-night-signal">
+  <title>대전 백링크 대행 전문 — 구조로 증명하는 검색 신호 설계 · 정보</title>
+  <meta name="description" content="대전 지역 기반 백링크 대행. PBN 노드 설계와 검색 신호 구축을 구조적으로 접근합니다. 조건별 선택 안내·이용 전 확인사항·FAQ 제공.">
+  <meta name="keywords" content="대전 백링크 대행 전문, 대전 백링크, PBN 백링크, 검색 신호, 대전 SEO">
+  <link rel="canonical" href="https://daejeon-web-marketing.pbn-builder.xyz/about.html">
+  <meta property="og:title" content="대전 백링크 대행 전문 — 구조로 증명하는 검색 신호 설계">
+  <meta property="og:description" content="PBN 구조 설계와 백링크 신호 구축을 데이터 기반으로 접근합니다. 조건별 적합성·FAQ·선택 기준 정리.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daejeon-web-marketing.pbn-builder.xyz/about.html">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      background-color: #0b0c0e;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans KR', 'Noto Sans KR', 'Helvetica Neue', 'Arial', sans-serif;
+      background-color: #0b0c0e;
+      color: #e0e2e6;
+      line-height: 1.6;
+      font-weight: 400;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #f2f4f8;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 4.8rem);
+      line-height: 1.05;
+      border-bottom: 3px solid #39ff14;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.8rem;
+      color: #ffffff;
+      text-shadow: 0 0 12px rgba(57, 255, 20, 0.25);
+      word-break: keep-all;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 5vw, 2.7rem);
+      margin: 3rem 0 1.5rem;
+      padding-left: 0.9rem;
+      border-left: 8px solid #2ff923;
+      color: #d1ffc9;
+      background: linear-gradient(to right, rgba(47, 249, 35, 0.08), transparent);
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 1.8rem 0 0.8rem;
+      color: #b0ffb0;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      border-bottom: 1px dashed #3c4a3f;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.3rem;
+      color: #cbd5cd;
+      max-width: 70ch;
+    }
+
+    /* ===== GRID BACKGROUND ===== */
+    .x-grid-prl4-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background-image: 
+        linear-gradient(rgba(47, 249, 35, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(47, 249, 35, 0.06) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(circle at 30% 20%, black 30%, transparent 85%);
+      -webkit-mask-image: radial-gradient(circle at 30% 20%, black 30%, transparent 85%);
+    }
+
+    /* ===== LAYOUT WRAPPER ===== */
+    .k-wrap-019x {
+      max-width: 1340px;
+      margin: 0 auto;
+      padding: 1.5rem 2.2rem 3.5rem;
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(1px);
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav.nav-present {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      border-bottom: 2px solid #2e3a2e;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+      background: rgba(10, 12, 15, 0.75);
+      backdrop-filter: blur(14px);
+      border-radius: 0 0 18px 18px;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+
+    .logo-sig {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #2ff923;
+      text-shadow: 0 0 15px #1c7410;
+      text-transform: uppercase;
+      background: #0f1210;
+      padding: 0.1rem 1rem;
+      border: 1px solid #2ff923;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      gap: 2.3rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hamburger-menu a {
+      color: #b6cfb0;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      transition: 0.2s ease;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.2rem;
+    }
+
+    .hamburger-menu a:hover {
+      color: #2ff923;
+      border-bottom: 2px solid #2ff923;
+      text-shadow: 0 0 8px #1f4a1a;
+    }
+
+    .hamburger-menu a.active-page {
+      color: #ffffff;
+      border-bottom: 2px solid #2ff923;
+      font-weight: 700;
+    }
+
+    /* ===== CARDS & LAYOUT ===== */
+    .signal-card {
+      background: rgba(14, 18, 14, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid #2e482a;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 2px;
+      box-shadow: 0 10px 25px -8px rgba(0,0,0,0.7);
+      transition: border 0.15s;
+    }
+
+    .signal-card:hover {
+      border: 1px solid #3cf525;
+    }
+
+    .data-metric {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin: 2.5rem 0;
+    }
+
+    .metric-item {
+      background: #0c110c;
+      padding: 1.2rem 2rem;
+      border-left: 5px solid #2ff923;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #deffd0;
+    }
+
+    .faq-block {
+      margin: 2.5rem 0;
+    }
+
+    details {
+      margin-bottom: 1.2rem;
+      background: #0a0f0a;
+      border: 1px solid #2c3d2a;
+      padding: 0.9rem 1.5rem;
+      border-radius: 0;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    details[open] {
+      background: #121e10;
+      border-color: #2ff923;
+    }
+
+    summary {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #c8e0b5;
+      list-style: '▹ ';
+      letter-spacing: -0.2px;
+    }
+
+    .faq-answer {
+      margin-top: 1rem;
+      padding-left: 1.8rem;
+      color: #b3c2a8;
+    }
+
+    hr {
+      border: 1px solid #253223;
+      margin: 2.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .responsive-768 .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1.3rem;
+        gap: 1rem;
+      }
+      .k-wrap-019x {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="x-grid-prl4-grid"></div>
+<div class="k-wrap-019x">
+  
+  <nav class="nav-present">
+    <div class="logo-area">PBN·DJJ</div>
+    <div class="hamburger-menu responsive-768">
+      <a href="#">홈</a>
+      <a href="#">서비스</a>
+      <a href="#" class="active-page">정보</a>
+      <a href="#">포트폴리오</a>
+      <a href="#">문의</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>대전 백링크 대행 전문<br>정보 아키텍처</h1>
+    <p style="font-size:1.2rem; max-width:72ch; color:#b6d7a8;">대전 지역 검색 신호를 구조적으로 설계합니다. PBN 노드 구성, 지리적 시그널, 백링크 프로파일링에 관한 기술적 정보를 투명하게 제공합니다.</p>
+
+    <div class="signal-card">
+      <h3>01 · 조건별 선택 기준</h3>
+      <p>대전 지역 상위 노출을 위한 백링크 설계는 단순 링크 개수가 아닌 노드 간 연관성과 지리적 분포에 기반합니다. 아래 조건으로 적합한 경로를 안내합니다.</p>
+      <div class="data-metric">
+        <div class="metric-item"><span style="display:block; font-size:0.9rem; color:#8ba989;">지역 신호 밀도</span>대전·충청권 87%</div>
+        <div class="metric-item"><span style="display:block; font-size:0.9rem; color:#8ba989;">PBN 평균 DA</span>22~38</div>
+        <div class="metric-item"><span style="display:block; font-size:0.9rem; color:#8ba989;">링크 타입</span>컨텍스트 + 인포</div>
+      </div>
+      <p><strong>신규 사이트</strong> — 티어1 PBN 노드에서 주제별 인용 신호를 12~18주에 걸쳐 전달. 대전 관련 지역 미디어 백링크 병행.<br>
+      <strong>기존 사이트 회복</strong> — 손실된 링크 프로파일 분석 후, 유사 지리적 페르소나 노드로 재구축. 부정적 신호 제거 병행.</p>
+    </div>
+
+    <h2>대전 기반 PBN 노드 설계</h2>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:1.5rem; margin:2rem 0;">
+      <div class="signal-card" style="margin:0;">
+        <h4 style="color:#2ff923; margin-bottom:0.8rem;">메트로폴리탄 노드</h4>
+        <p>대전 도심·유성구 IP 흔적이 있는 도메인. 지역 포털과 유사한 시그널. 교통·연구·행정 관련 백링크 텍스트.</p>
+      </div>
+      <div class="signal-card" style="margin:0;">
+        <h4 style="color:#2ff923; margin-bottom:0.8rem;">대덕 R&D 특구 시그널</h4>
+        <p>기술·과학 블로그 PBN. 연구 키워드와 결합한 백링크. 대전 컨텍스트에 강한 신호. 자연스러운 인용 패턴.</p>
+      </div>
+      <div class="signal-card" style="margin:0;">
+        <h4 style="color:#2ff923; margin-bottom:0.8rem;">충청지역 연계망</h4>
+        <p>세종·청주·계룡과 연결된 지역 언론형 노드. 광역 검색 신호 확장. 대전 로컬 SEO 정확도 강화.</p>
+      </div>
+    </div>
+
+    <div class="signal-card">
+      <h3>📡 이용 전 확인사항</h3>
+      <ul style="margin-left:1.8rem; color:#cbdcc2; list-style-type:'⏺ '; line-height:2;">
+        <li>대상 도메인의 현재 백링크 프로파일 스냅샷 분석 필수</li>
+        <li>대전 지역색 반영을 위해 랜딩페이지 지역 키워드 포함 권장</li>
+        <li>모든 PBN은 실제 운영 이력이 있는 사이트 기반 (드롭 도메인 아님)</li>
+        <li>캠페인 기간 최소 12주 이상 유지 (신호 축적 기간)</li>
+        <li>직접적인 앵커텍스트 비율 12% 이하 유지</li>
+      </ul>
+    </div>
+
+    <h2>FAQ · 대전 백링크 대행 전문</h2>
+    <div class="faq-block">
+      <details>
+        <summary>대전 지역 타겟팅만 가능한가요?</summary>
+        <div class="footer-answer">
+          <p>대전을 중심으로 세종·충남·충북까지 광역 시그널을 설계합니다. 원하시면 전국 키워드와 혼합 구조도 제공하며, 대전 시그널이 주된 가중치를 가집니다.</p>
+        </div>
+      </details>
+      <details>
+        <summary>PBN 백링크가 위험하지 않나요?</summary>
+        <div class="footer-answer">
+          <p>저희는 풋프린트를 최소화한 분리 호스팅, 다양한 레지스트라, 독립적인 콘텐츠 구조를 유지합니다. 대형 검색 업데이트에도 안정적인 구글 서치 콘솔 데이터를 보유하고 있습니다.</p>
+        </div>
+      </details>
+      <details>
+        <summary>정보 페이지에 제시된 노드 설계는 실제 운영 중인가요?</summary>
+        <div class="footer-answer">
+          <p>모든 노드는 대전 및 인근 지역에 최적화된 상태로 유지보수 중입니다. 분기별 품질 체크리스트를 통해 링크 쥬스 및 인덱싱 상태를 확인합니다.</p>
+        </div>
+      </details>
+      <details>
+        <summary>얼마나 오래 지속되나요?</summary>
+        <div class="footer-answer">
+          <p>백링크는 구조적으로 영구 배치를 원칙으로 합니다. 다만 검색 환경 변화에 따라 6개월 단위로 리밸런싱을 권장하며, 대부분 18개월 이상 유지 가능합니다.</p>
+        </div>
+      </details>
+    </div>
+
+    <hr>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-top:2.2rem;">
+      <div style="color:#a1b39a; font-size:0.9rem;">대전 · 구조적 백링크 설계 · 정보 갱신 2025</div>
+      <div style="color:#2ff923; font-weight:600;">PBN BUILDER — 대전 백링크 대행 전문</div>
+    </div>
+  </main>
+</div>
 </body>
 </html>
