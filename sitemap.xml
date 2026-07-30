@@ -1,194 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://daejeon-web-marketing.pbn-builder.xyz/about.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daejeon-web-marketing.pbn-builder.xyz/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/</loc>
-    <lastmod>2026-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://daejeon-web-marketing.pbn-builder.xyz/about.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://daejeon-web-marketing.pbn-builder.xyz/blog.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260705-1150.html</loc>
-    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0166.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0167.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0168.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0169.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0170.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0171.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0172.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0173.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0174.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0175.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0176.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0177.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0178.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0179.html</loc>
-    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260719-0180.html</loc>
-    <lastmod>2026-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0237.html</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0238.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0221.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0222.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0223.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0224.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0225.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0226.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0227.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0228.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0229.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0230.html</loc>
-    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0231.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0237.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daejeon-web-marketing.pbn-builder.xyz/posts/gemini-coverage-20260721-0238.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
