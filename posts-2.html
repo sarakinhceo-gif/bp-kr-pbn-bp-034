@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-bp-034</title>
+  <meta name="description" content="kr-pbn-bp-034에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://daejeon-web-marketing.pbn-builder.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --primary: #000000;
+ --secondary: #ffffff;
+ --accent: #ff3b00;
+ --border-width: 3px;
+ --font-main: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+ --font-mono: 'Courier New', Courier, monospace;
+ --space-unit: 48px;
+ --section-gap: 120px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+
+ body {
+ background-color: var(--secondary);
+ color: var(--primary);
+ font-family: var(--font-mono);
+ line-height: 1.5;
+ overflow-x: hidden;
+ border: var(--border-width) solid var(--primary);
+ min-height: 100vh;
+ }
+
+ a {
+ color: inherit;
+ text-decoration: none;
+ }
+
+ ul {
+ list-style: none;
+ }
+
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-family: var(--font-main);
+ text-transform: uppercase;
+ line-height: 0.9;
+ letter-spacing: -0.02em;
+ }
+
+ h1 { font-size: clamp(3rem, 8vw, 8rem); }
+ h2 { font-size: clamp(2rem, 5vw, 5rem); }
+ h3 { font-size: clamp(1.5rem, 3vw, 3rem); }
+ 
+ .text-accent { color: var(--accent); }
+ .text-outline {
+ -webkit-text-stroke: 2px var(--primary);
+ color: transparent;
+ }
+
+ /* Layout Components */
+ .container {
+ width: 100%;
+ padding: 0 var(--space-unit);
+ max-width: none; /* Full bleed */
+ }
+
+ .section {
+ padding: var(--section-gap) 0;
+ border-bottom: var(--border-width) solid var(--primary);
+ position: relative;
+ }
+
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: var(--space-unit);
+ }
+
+ .grid-3 {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: var(--space-unit);
+ }
+
+ /* Buttons */
+ .btn {
+ display: inline-block;
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 1rem 2rem;
+ font-family: var(--font-main);
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ border: none;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ box-shadow: 6px 6px 0px var(--accent);
+ transform: skew(-5deg);
+ }
+
+ .btn:hover {
+ background: var(--accent);
+ color: var(--primary);
+ box-shadow: 2px 2px 0px var(--primary);
+ transform: skew(-5deg) translate(2px, 2px);
+ }
+
+ /* Header */
+ header {
+ border-bottom: var(--border-width) solid var(--primary);
+ padding: 1.5rem var(--space-unit);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ background: var(--secondary);
+ z-index: 1000;
+ }
+
+ .logo {
+ font-family: var(--font-main);
+ font-size: 2rem;
+ font-weight: bold;
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 0.5rem 1rem;
+ transform: rotate(-2deg);
+ }
+
+ nav ul {
+ display: flex;
+ gap: 2rem;
+ }
+
+ nav a {
+ font-weight: bold;
+ text-transform: uppercase;
+ position: relative;
+ }
+
+ nav a::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 4px;
+ background: var(--accent);
+ bottom: -5px;
+ left: 0;
+ transform: scaleX(0);
+ transform-origin: right;
+ transition: transform 0.3s ease;
+ }
+
+ nav a:hover::after {
+ transform: scaleX(1);
+ transform-origin: left;
+ }
+
+ .mobile-menu-btn {
+ display: none;
+ font-size: 2rem;
+ background: none;
+ border: 2px solid var(--primary);
+ padding: 0.5rem;
+ cursor: pointer;
+ }
+
+ /* Hero Section */
+ .hero {
+ min-height: 80vh;
+ display: flex;
+ align-items: center;
+ background-image: 
+ linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000),
+ linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000);
+ background-size: 40px 40px;
+ background-position: 0 0, 20px 20px;
+ background-color: #f0f0f0;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-content {
+ background: var(--secondary);
+ border: var(--border-width) solid var(--primary);
+ padding: 4rem;
+ max-width: 90%;
+ transform: rotate(1deg);
+ box-shadow: 20px 20px 0px var(--accent);
+ z-index: 2;
+ }
+
+ .hero-badge {
+ display: inline-block;
+ background: var(--accent);
+ color: var(--primary);
+ font-weight: bold;
+ padding: 0.5rem 1rem;
+ margin-bottom: 1rem;
+ font-family: var(--font-mono);
+ border: 2px solid var(--primary);
+ }
+
+ /* Services / Info */
+ .info-block {
+ border: var(--border-width) solid var(--primary);
+ padding: 2rem;
+ background: var(--secondary);
+ position: relative;
+ }
+
+ .info-block::before {
+ content: '';
+ position: absolute;
+ top: -10px;
+ left: -10px;
+ width: 100%;
+ height: 100%;
+ border: var(--border-width) solid var(--accent);
+ z-index: -1;
+ }
+
+ /* UGC Reviews */
+ .review-card {
+ border: var(--border-width) solid var(--primary);
+ padding: 2rem;
+ background: #fff;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ min-height: 300px;
+ transition: transform 0.3s;
+ }
+
+ .review-card:hover {
+ transform: translateY(-10px);
+ box-shadow: 10px 10px 0px var(--primary);
+ }
+
+ .stars {
+ color: var(--accent);
+ font-size: 1.5rem;
+ margin-bottom: 1rem;
+ }
+
+ .review-meta {
+ margin-top: 2rem;
+ border-top: 2px solid var(--primary);
+ padding-top: 1rem;
+ font-size: 0.9rem;
+ display: flex;
+ justify-content: space-between;
+ font-weight: bold;
+ }
+
+ /* Footer */
+ footer {
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 4rem var(--space-unit);
+ border-top: var(--border-width) solid var(--accent);
+ }
+
+ .footer-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 4rem;
+ }
+
+ .footer-cta {
+ font-size: 3rem;
+ font-family: var(--font-main);
+ color: var(--accent);
+ display: block;
+ margin-bottom: 2rem;
+ }
+
+ .copyright {
+ margin-top: 4rem;
+ border-top: 1px solid #333;
+ padding-top: 2rem;
+ font-size: 0.8rem;
+ color: #888;
+ text-align: center;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ :root {
+ --space-unit: 24px;
+ --section-gap: 60px;
+ }
+
+ .grid-2, .grid-3 {
+ grid-template-columns: 1fr;
+ }
+
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--secondary);
+ border-bottom: var(--border-width) solid var(--primary);
+ padding: 2rem;
+ gap: 1.5rem;
+ }
+
+ nav ul.active {
+ display: flex;
+ }
+
+ .mobile-menu-btn {
+ display: block;
+ }
+
+ .hero-content {
+ transform: rotate(0);
+ padding: 2rem;
+ box-shadow: 10px 10px 0px var(--accent);
+ }
+
+ h1 { font-size: 3.5rem; }
+ 
+ .footer-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-bp-034">
+  <meta property="og:description" content="kr-pbn-bp-034에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://daejeon-web-marketing.pbn-builder.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="logo">PBN_STRATEGY_DJ</div>
+ <nav>
+ <ul id="nav-menu">
+ <li><a href="#about">전문성</a></li>
+ <li><a href="#process">프로세스</a></li>
+ <li><a href="#reviews">검증된 결과</a></li>
+ <li><a href="#contact">문의하기</a></li>
+ </ul>
+ </nav>
+ <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 29개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0225.html">대전 백링크 대행 전문 기업이 알려주는 망원 노래방 추천정보와 이용 팁</a>
+        <p class="post-item__summary">오랜만에 만난 친구들과 즐거운 시간을 보내기 위해 망원동 골목을 헤매다 보면 어디로 들어가야 할지 고민되는 순간이 찾아옵니다. 인터넷에서 흔히 접하는 대전 백링크 대행 전문 홍보물보다 더 신뢰할 수</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0226.html">대전 백링크 대행 전문 업체가 분석한 홍대 노래방 추천정보와 최적의 시간 활용법</a>
+        <p class="post-item__summary">홍대 노래방은 언제 가도 북적거릴 것이라는 생각은 반은 맞고 반은 틀린 이야기입니다. 많은 이들이 저녁 식사 직후인 8시에서 10시 사이를 피크 타임으로 오해하여 이 시간을 당연한 것처럼 선택하곤 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0227.html">대전 백링크 대행 전문 기술로 알아보는 공덕 셔츠룸 추천정보와 인원별 팁</a>
+        <p class="post-item__summary">성공적인 모임을 위한 충족 조건은 공간의 규모와 인원 수의 조화에서 시작됩니다. 공덕 지역에서 셔츠룸을 탐색할 때는 단순히 이름난 곳을 찾기보다, 함께하는 인원이 얼마나 밀도 있게 소통할 수 있는지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0228.html">대전 백링크 대행 전문 노하우를 활용한 연남 유흥 추천정보와 업체 비교법</a>
+        <p class="post-item__summary">여러분은 평소 유흥 시설을 선택할 때 어떤 기준을 가장 중요하게 생각하십니까. 단순히 주변의 추천이나 포털의 상위 노출 결과에만 의존하고 있지는 않은지 자문해 볼 필요가 있습니다. 대전 백링크 대행</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0229.html">대전 백링크 대행 전문 활용한 마곡 가라오케 추천정보 분석 가이드</a>
+        <p class="post-item__summary">디지털 환경에서 마케팅 전략을 세우는 것과 오프라인 공간을 선택하는 과정은 정보의 신뢰도를 판별한다는 점에서 본질적으로 유사합니다. 대전 백링크 대행 전문 업체를 통해 검색 노출을 최적화하듯, 특정</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0230.html">대전 백링크 대행 전문 방식과 마곡 유흥 추천정보 가격 비교 원리</a>
+        <p class="post-item__summary">마케팅 최적화를 위해 대전 백링크 대행 전문 업체의 전략을 비교하듯, 마곡 지역의 유흥 시설을 선택할 때도 가격 구조를 분석하는 합리적인 판단 기준이 존재합니다. 이용자는 단순히 비용이 저렴한 곳을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0231.html">대전 백링크 대행 전문 관점에서 보는 합정 노래방 추천정보 예약</a>
+        <p class="post-item__summary">디지털 마케팅에서 대전 백링크 대행 전문 업체와 협력할 때 흔히 발생하는 실수는 명확한 목표 설정 없는 무분별한 링크 생성입니다. 합정 지역에서 노래방을 찾을 때도 사전 조사 없이 무작정 방문하는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0237.html">대전 백링크 대행 전문 합정 셔츠룸 단골들이 뽑은 핫플 매거진 정보</a>
+        <p class="post-item__summary">디지털 마케팅 업계에서 대전 백링크 대행 전문 업체를 찾는 과정은 마치 신뢰할 수 있는 정보를 선별하는 작업과 흡사합니다. 단순히 결과물만 보고 판단하기보다는 그 과정이 얼마나 투명하게 진행되는지를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0238.html">대전 백링크 대행 전문 셔츠룸 사이트 가격 판단 기준과 비교 분석</a>
+        <p class="post-item__summary">마케팅 분야의 대전 백링크 대행 전문 컨설팅이 데이터를 기반으로 최적의 경로를 찾는 것과 같이, 이용자들도 자신에게 적합한 장소를 찾기 위해 다양한 비교를 수행합니다. 특히 셔츠룸 사이트를 이용할 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
